@@ -1,0 +1,6 @@
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\ConexaoDll\bin\Debug\ConexaoDll.dll
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\ConexaoDll\bin\Debug\ConexaoDll.pdb
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\ConexaoDll\obj\Debug\ConexaoDll.csproj.AssemblyReference.cache
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\ConexaoDll\obj\Debug\ConexaoDll.csproj.CoreCompileInputs.cache
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\ConexaoDll\obj\Debug\ConexaoDll.dll
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\ConexaoDll\obj\Debug\ConexaoDll.pdb

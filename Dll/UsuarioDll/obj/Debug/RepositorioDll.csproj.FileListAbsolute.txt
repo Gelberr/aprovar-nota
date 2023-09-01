@@ -1,0 +1,9 @@
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\bin\Debug\Repositorio.dll
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\bin\Debug\Repositorio.pdb
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\bin\Debug\ConexaoDll.dll
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\bin\Debug\ConexaoDll.pdb
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\obj\Debug\RepositorioDll.csproj.AssemblyReference.cache
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\obj\Debug\RepositorioDll.csproj.CoreCompileInputs.cache
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\obj\Debug\RepositorioDll.csproj.CopyComplete
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\obj\Debug\Repositorio.dll
+D:\Desenvolvimentos de Sistemas\Repositorios\MicroUniveso\SolucaoAprovarNota\Dll\Repositorio\obj\Debug\Repositorio.pdb
