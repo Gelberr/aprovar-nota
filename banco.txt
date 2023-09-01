@@ -1,0 +1,131 @@
+create table usuario(
+Id_Usuario SMALLINT IDENTITY(1,1) PRIMARY KEY,
+Nome_Usuario VARCHAR(100) NOT NULL, 
+Email_Usuario VARCHAR(50) NOT NULL, 
+Senha_Usuario VARCHAR(8) NOT NULL, 
+Confirmar_Senha_Usuario VARCHAR(8) NOT NULL, 
+Papel_Usuario CHAR(1) NOT NULL,
+Quantidade_Minimo_Visto int null,
+Quantidade_Maximo_Visto int null,
+Quantidade_Minimo_Aprovacao int null,
+Quantidade_Maximo_Aprovacao int null,
+Status_Usuario CHAR(1) NOT NULL, 
+Data_Inclusao_Usuario DATETIME,
+Data_Alteracao_Usuario datetime
+);
+
+/*---------------------------------------------------------------------------*/
+
+create table configuracao_faixa_valor(
+Id_Configuracao INT IDENTITY(1,1) PRIMARY KEY,
+Descricao_Configuracao VARCHAR(100) NOT NULL,
+Faixa_Minima_Configuracao float not null,
+Faixa_Maxima_Configuracao float not null,
+Quantidade_Visto_Configuracao int not null,
+Quantidade_Aprovacao_Configuracao int not null,
+Status_Configuracao CHAR(1) NOT NULL, 
+Data_Inclusao_Configuracao DATETIME,
+Data_Alteracao_Configuracao datetime
+)
+/*
+insert into configuracao_faixa_valor (Descricao_Configuracao, Faixa_Minima_Configuracao, Faixa_Maxima_Configuracao, Quantidade_Visto_Configuracao, Quantidade_Aprovacao_Configuracao, Status_Configuracao, Data_Inclusao_Configuracao, Data_Alteracao_Configuracao)
+values
+('0,00 a 1.000,00', 0.00,1000.00,1,0,'A',GETDATE(),GETDATE())
+
+insert into configuracao_faixa_valor (Descricao_Configuracao, Faixa_Minima_Configuracao, Faixa_Maxima_Configuracao, Quantidade_Visto_Configuracao, Quantidade_Aprovacao_Configuracao, Status_Configuracao, Data_Inclusao_Configuracao, Data_Alteracao_Configuracao)
+values
+('1.000,01 a 10.000,00', 1000.01,10000.00,1,1,'A',GETDATE(),GETDATE())
+
+insert into configuracao_faixa_valor (Descricao_Configuracao, Faixa_Minima_Configuracao, Faixa_Maxima_Configuracao, Quantidade_Visto_Configuracao, Quantidade_Aprovacao_Configuracao, Status_Configuracao, Data_Inclusao_Configuracao, Data_Alteracao_Configuracao)
+values
+('10.000,01 a 50.000,00', 10000.01,5000.00,2,1,'A',GETDATE(),GETDATE())
+
+insert into configuracao_faixa_valor (Descricao_Configuracao, Faixa_Minima_Configuracao, Faixa_Maxima_Configuracao, Quantidade_Visto_Configuracao, Quantidade_Aprovacao_Configuracao, Status_Configuracao, Data_Inclusao_Configuracao, Data_Alteracao_Configuracao)
+values
+('50.000,01 a 999.999,99', 50000.01,999999.99,2,2,'A',GETDATE(),GETDATE())
+
+*/
+
+
+/*---------------------------------------------------------------------------*/
+
+create table nota(
+Id_Nota INT IDENTITY(1,1) PRIMARY KEY,
+Data_Emissao_Nota DATETIME,
+Valor_Mercadoria_Nota float not null,
+Valor_Desconto_Nota float null,
+Valor_Frete_Nota float null,
+Valor_Total_Nota float not null,
+Id_Configuracao_Faixa_Valor_Nota SMALLINT not null,
+Quantidade_Visto_Nota int not null,
+Quantidade_Aprovacao_Nota int not null,
+Status_Nota CHAR(1) NOT NULL, 
+Data_Inclusao_Nota DATETIME,
+Data_Alteracao_Nota datetime
+)
+
+
+/*
+insert into nota (Data_Emissao_Nota, Valor_Mercadoria_Nota, Valor_Desconto_Nota, Valor_Frete_Nota, Valor_Total_Nota, Id_Configuracao_Faixa_Valor_Nota, Quantidade_Visto_Nota, Quantidade_Aprovacao_Nota, Status_Nota, Data_Inclusao_Nota, Data_Alteracao_Nota)
+values
+('10/01/2023', 562.69,0.00,10.00,572.69,1,0,0,'P',GETDATE(),GETDATE())
+
+insert into nota (Data_Emissao_Nota, Valor_Mercadoria_Nota, Valor_Desconto_Nota, Valor_Frete_Nota, Valor_Total_Nota, Id_Configuracao_Faixa_Valor_Nota, Quantidade_Visto_Nota, Quantidade_Aprovacao_Nota, Status_Nota, Data_Inclusao_Nota, Data_Alteracao_Nota)
+values
+('15/01/2023', 762.69,0.00,10.00,772.69,1,0,0,'P',GETDATE(),GETDATE())
+
+---------------------------------------------------------------------------
+
+insert into nota (Data_Emissao_Nota, Valor_Mercadoria_Nota, Valor_Desconto_Nota, Valor_Frete_Nota, Valor_Total_Nota, Id_Configuracao_Faixa_Valor_Nota, Quantidade_Visto_Nota, Quantidade_Aprovacao_Nota, Status_Nota, Data_Inclusao_Nota, Data_Alteracao_Nota)
+values
+('02/02/2023', 1562.69,0.00,10.00,1572.69,2,0,0,'P',GETDATE(),GETDATE())
+
+insert into nota (Data_Emissao_Nota, Valor_Mercadoria_Nota, Valor_Desconto_Nota, Valor_Frete_Nota, Valor_Total_Nota, Id_Configuracao_Faixa_Valor_Nota, Quantidade_Visto_Nota, Quantidade_Aprovacao_Nota, Status_Nota, Data_Inclusao_Nota, Data_Alteracao_Nota)
+values
+('10/02/2023', 7562.69,0.00,10.00,7572.69,2,0,0,'P',GETDATE(),GETDATE())
+
+---------------------------------------------------------------------------
+
+insert into nota (Data_Emissao_Nota, Valor_Mercadoria_Nota, Valor_Desconto_Nota, Valor_Frete_Nota, Valor_Total_Nota, Id_Configuracao_Faixa_Valor_Nota, Quantidade_Visto_Nota, Quantidade_Aprovacao_Nota, Status_Nota, Data_Inclusao_Nota, Data_Alteracao_Nota)
+values
+('13/03/2023', 21562.69,0.00,10.00,21572.69,3,0,0,'P',GETDATE(),GETDATE())
+
+insert into nota (Data_Emissao_Nota, Valor_Mercadoria_Nota, Valor_Desconto_Nota, Valor_Frete_Nota, Valor_Total_Nota, Id_Configuracao_Faixa_Valor_Nota, Quantidade_Visto_Nota, Quantidade_Aprovacao_Nota, Status_Nota, Data_Inclusao_Nota, Data_Alteracao_Nota)
+values
+('25/03/2023', 31562.69,0.00,10.00,31572.69,3,0,0,'P',GETDATE(),GETDATE())
+
+---------------------------------------------------------------------------
+
+insert into nota (Data_Emissao_Nota, Valor_Mercadoria_Nota, Valor_Desconto_Nota, Valor_Frete_Nota, Valor_Total_Nota, Id_Configuracao_Faixa_Valor_Nota, Quantidade_Visto_Nota, Quantidade_Aprovacao_Nota, Status_Nota, Data_Inclusao_Nota, Data_Alteracao_Nota)
+values
+('17/04/2023', 71562.69,0.00,10.00,71572.69,4,0,0,'P',GETDATE(),GETDATE())
+
+insert into nota (Data_Emissao_Nota, Valor_Mercadoria_Nota, Valor_Desconto_Nota, Valor_Frete_Nota, Valor_Total_Nota, Id_Configuracao_Faixa_Valor_Nota, Quantidade_Visto_Nota, Quantidade_Aprovacao_Nota, Status_Nota, Data_Inclusao_Nota, Data_Alteracao_Nota)
+values
+('10/04/2023', 171562.69,0.00,10.00,171572.69,4,0,0,'P',GETDATE(),GETDATE())
+
+*/
+
+/*---------------------------------------------------------------------------*/
+
+create table historico_visto_aprovacao(
+Id_Historico INT IDENTITY(1,1) PRIMARY KEY,
+Data_Historico DATETIME not null,
+Id_Usuario_Historico INT not null,
+Operacao_Historico VARCHAR(10) NOT NULL,
+Id_Nota_Historico INT not null,
+Quantidade_Visto_Historico int null,
+Quantidade_Aprovacao_Historico int null,
+Id_Configuracao_Faixa_Valor_Historico INT null,
+Status_Historico CHAR(1) NOT NULL, 
+Data_Inclusao_Historico DATETIME,
+Data_Alteracao_Historico datetime
+);
+
+/*---------------------------------------------------------------------------*/
+
+
+select * from historico_visto_aprovacao;
+select * from nota;
+select * from usuario;
+select * from configuracao_faixa_valor;
