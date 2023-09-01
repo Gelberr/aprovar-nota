@@ -99,7 +99,7 @@
             this.btnCadastar.Name = "btnCadastar";
             this.btnCadastar.Size = new System.Drawing.Size(183, 36);
             this.btnCadastar.TabIndex = 5;
-            this.btnCadastar.Text = "Cadastrar";
+            this.btnCadastar.Text = "Cadastrar Usuário";
             this.btnCadastar.UseVisualStyleBackColor = true;
             this.btnCadastar.Click += new System.EventHandler(this.btnCadastar_Click);
             // 
